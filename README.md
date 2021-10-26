@@ -1,5 +1,8 @@
-# Basic web structure
-Basic web structure for projects from scratch
+# Progress Steps
+[Demo](https://tbm85.github.io/demo-progress-steps/)
 
-## How to use it
-Download the zip file, unzip it and start your project in it
+## Description
+A progress steps component made with Vanilla JS.
+
+## License
+Copyright (c) 2021 Tania Ballester. This project is using [MIT License](LICENSE.md)
