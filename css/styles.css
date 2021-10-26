@@ -17,12 +17,32 @@ body {
 
 .progress_steps_bar {
   margin: 1em;
-  width: 100%;
+  width: 90%;
   max-width: 55em;
+}
+
+.progress_steps_bar::before {
+  content: "";
+  background-color: #c1cce2;
+  position: absolute;
+  height: 0.25em;
+  width: 90%;
+  max-width: 55em;
+}
+
+.progress {
+  background-color: #455c86;
+  position: absolute;
+  height: 0.25em;
+  width: 30%;
+  max-width: 55em;
+}
+
+.steps {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .step {
-  padding: 0.5em;
+  padding: 1em 0;
 }
