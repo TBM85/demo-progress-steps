@@ -84,9 +84,13 @@ body {
 .btn-group {
   justify-content: center;
   display: flex;
+  margin: 2em auto;
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: #ebf2fe;
   color: #455c86;
   border: 0.15em solid #455c86;
@@ -94,9 +98,16 @@ body {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   width: 8em;
   margin: 0.25em;
-  padding: 0.5em;
   font-size: 1.2em;
   cursor: pointer;
+}
+
+.btn img {
+  width: 1.5em;
+}
+
+.btn span {
+  padding: 0.5em;
 }
 
 .active {
