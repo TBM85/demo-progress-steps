@@ -16,6 +16,7 @@ body {
   margin: 0;
 }
 
+/********* MEDIA QUERIES **********/
 @media (max-width: 1199px) {
   .progress_steps,
   .progress_steps_bar::before {
@@ -36,6 +37,7 @@ body {
   }
 }
 
+/********* STEPS **********/
 .progress_steps {
   margin: 4em auto;
 }
@@ -73,11 +75,31 @@ body {
   font-weight: bold;
 }
 
+/********* CARDS **********/
+.progress_cards {
+  text-align: justify;
+}
+
+/********* BUTTONS **********/
+.btn-group {
+  justify-content: center;
+  display: flex;
+}
+
+.btn {
+  background: #ebf2fe;
+  color: #455c86;
+  border: 0.15em solid #455c86;
+  border-radius: 0.25em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 8em;
+  margin: 0.25em;
+  padding: 0.5em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
 .active {
   border: 0.2em solid #455c86;
   color: #455c86;
-}
-
-.progress_cards {
-  text-align: justify;
 }
