@@ -16,6 +16,14 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-weight: 100;
+}
+
+h2 {
+  font-weight: 400;
+}
+
 /********* MEDIA QUERIES **********/
 @media (max-width: 1199px) {
   .progress_steps,
@@ -108,6 +116,18 @@ body {
 
 .btn span {
   padding: 0.5em;
+}
+
+.btn:disabled {
+  background: #f0f5fd;
+  color: #c1cce2;
+  border: 0.15em solid #c1cce2;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.btn:disabled img {
+  filter: brightness(0) invert(0.75);
 }
 
 .active {
