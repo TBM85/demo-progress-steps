@@ -11,13 +11,33 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
   margin: 0;
 }
 
-.progress_steps_bar {
-  margin: 1em;
-  width: 90%;
+@media (max-width: 1199px) {
+  .progress_steps,
+  .progress_steps_bar::before {
+    width: 90%;
+  }
+  .progress {
+    width: 22%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .progress_steps,
+  .progress_steps_bar::before {
+    width: 60%;
+  }
+  .progress {
+    width: 15%;
+  }
+}
+
+.progress_steps {
+  margin: 4em auto;
 }
 
 .progress_steps_bar::before {
@@ -25,14 +45,12 @@ body {
   background-color: #c1cce2;
   position: absolute;
   height: 0.25em;
-  width: 90%;
 }
 
 .progress {
   background-color: #455c86;
   position: absolute;
   height: 0.25em;
-  width: 22%;
 }
 
 .steps {
@@ -58,4 +76,8 @@ body {
 .active {
   border: 0.2em solid #455c86;
   color: #455c86;
+}
+
+.progress_cards {
+  text-align: justify;
 }
