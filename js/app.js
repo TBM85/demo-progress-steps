@@ -42,6 +42,11 @@ const resizeWidth = (bigSize) => {
   } else {
     progress.style.width = (actives.length - 1) / (steps.length - 1) * 90 + "%";
   }
+
+  // The "continue" button is disabled when step 5 is reached
+  if (actives.length === 5) {
+    btnRight.setAttribute("disabled", "");
+  };
 }
 
 
