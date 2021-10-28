@@ -18,6 +18,18 @@ btnRight.addEventListener("click", () => {
   update();
 });
 
+// When the button "return" is clicked,
+// there is a movement of one step to the left
+btnLeft.addEventListener("click", () => {
+  stepActive--;
+
+  if (stepActive > steps.length) {
+    stepActive === steps.length;
+  }
+
+  update();
+});
+
 // Update step status
 const update = () => {
   steps.forEach((step, i) => {
