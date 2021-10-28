@@ -26,22 +26,14 @@ h2 {
 
 /********* MEDIA QUERIES **********/
 @media (max-width: 1199px) {
-  .progress_steps,
-  .progress_steps_bar::before {
+  .progress_steps {
     width: 90%;
-  }
-  .progress {
-    width: 22%;
   }
 }
 
 @media (min-width: 1200px) {
-  .progress_steps,
-  .progress_steps_bar::before {
+  .progress_steps {
     width: 60%;
-  }
-  .progress {
-    width: 15%;
   }
 }
 
@@ -55,12 +47,15 @@ h2 {
   background-color: #c1cce2;
   position: absolute;
   height: 0.25em;
+  max-width: 52em;
+  width: 90%;
 }
 
 .progress {
   background-color: #455c86;
   position: absolute;
   height: 0.25em;
+  max-width: 52em;
 }
 
 .steps {
