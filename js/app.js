@@ -1,4 +1,5 @@
 const btnRight = document.querySelector("#btn-right");
+const btnLeft = document.querySelector("#btn-left");
 
 const progress = document.querySelector(".progress");
 const steps = document.querySelectorAll(".step");
@@ -44,8 +45,10 @@ const resizeWidth = (bigSize) => {
   }
 
   // The "continue" button is disabled when step 5 is reached
+  // The "return" button is enable when step 5 is reached
   if (actives.length === 5) {
     btnRight.setAttribute("disabled", "");
+    btnLeft.removeAttribute("disabled", "");
   };
 }
 
