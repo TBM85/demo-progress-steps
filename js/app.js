@@ -56,6 +56,11 @@ const resizeWidth = (bigSize) => {
     progress.style.width = (actives.length - 1) / (steps.length - 1) * 90 + "%";
   }
 
+  btnStatus(actives);
+}
+
+// Control when a button is disabled or not
+const btnStatus = (actives) => {
   // The "continue" button is disabled when step 5 is reached
   // The "return" button is enable when step 5 is reached
   // The "return" button is disabled when step 1 is reached
@@ -72,5 +77,3 @@ const resizeWidth = (bigSize) => {
     btnLeft.removeAttribute("disabled", "");
   }
 }
-
-
