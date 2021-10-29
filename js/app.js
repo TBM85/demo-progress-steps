@@ -58,10 +58,13 @@ const resizeWidth = (bigSize) => {
 
   // The "continue" button is disabled when step 5 is reached
   // The "return" button is enable when step 5 is reached
+  // The "return" button is disabled when step 1 is reached
   if (actives.length === 5) {
     btnRight.setAttribute("disabled", "");
     btnLeft.removeAttribute("disabled", "");
-  };
+  } else if (actives.length === 1) {
+    btnLeft.setAttribute("disabled", "");
+  } 
 }
 
 
