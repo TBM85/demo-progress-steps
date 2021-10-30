@@ -21,6 +21,7 @@ h1 {
 
 h2 {
   font-weight: 400;
+  text-align: center;
 }
 
 /********* MEDIA QUERIES **********/
@@ -37,11 +38,25 @@ h2 {
   .progress_steps {
     width: 90%;
   }
+  .progress_steps_bar::before {
+    max-width: 66em;
+    width: 90%;
+  }
+  .progress {
+    max-width: 66em;
+  }
 }
 
 @media (min-width: 1200px) {
   .progress_steps {
     width: 60%;
+  }
+  .progress_steps_bar::before {
+    max-width: 52em;
+    width: 60%;
+  }
+  .progress {
+    max-width: 52em;
   }
 }
 
@@ -55,15 +70,12 @@ h2 {
   background-color: #c1cce2;
   position: absolute;
   height: 0.25em;
-  max-width: 52em;
-  width: 90%;
 }
 
 .progress {
   background-color: #455c86;
   position: absolute;
   height: 0.25em;
-  max-width: 52em;
 }
 
 .steps {
